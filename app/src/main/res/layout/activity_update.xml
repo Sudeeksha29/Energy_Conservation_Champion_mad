@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#B3E5FC">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="40dp">
+
+        <!-- Title -->
+
+
+        <!-- Table Layout for Appliances -->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1,3"
+            android:padding="2dp">
+
+            <!-- Row 1 -->
+            <TableRow>
+                <TextView android:text="Fans:"/>
+                <EditText android:id="@+id/fans" android:inputType="number" android:layout_width="90dp"/>
+                <TextView android:text="Fridge:"/>
+                <EditText android:id="@+id/fridge" android:inputType="number" android:layout_width="90dp"/>
+            </TableRow>
+
+            <!-- Row 2 -->
+            <TableRow>
+                <TextView android:text="AC:"/>
+                <EditText android:id="@+id/ac" android:inputType="number" android:layout_width="90dp"/>
+                <TextView android:text="Lights:"/>
+                <EditText android:id="@+id/lights" android:inputType="number" android:layout_width="90dp"/>
+            </TableRow>
+
+            <!-- Row 3 -->
+            <TableRow>
+                <TextView android:text="Oven:"/>
+                <EditText android:id="@+id/oven" android:inputType="number" android:layout_width="90dp"/>
+                <TextView android:text="TV:"/>
+                <EditText android:id="@+id/tv" android:inputType="number" android:layout_width="90dp"/>
+            </TableRow>
+
+            <!-- Row 4 -->
+            <TableRow>
+                <TextView android:text="Bulbs:"/>
+                <EditText android:id="@+id/bulbs" android:inputType="number" android:layout_width="90dp"/>
+                <TextView android:text="Cooler:"/>
+                <EditText android:id="@+id/cooler" android:inputType="number" android:layout_width="90dp"/>
+            </TableRow>
+
+            <!-- Row 5 -->
+            <TableRow>
+                <TextView android:text="Water Filter:"/>
+                <EditText android:id="@+id/water_filter" android:inputType="number" android:layout_width="90dp"/>
+                <TextView android:text="Chargers:"/>
+                <EditText android:id="@+id/chargers" android:inputType="number" android:layout_width="90dp"/>
+            </TableRow>
+
+            <!-- Row 6 -->
+            <TableRow>
+                <TextView android:text="Inverter:"/>
+                <EditText android:id="@+id/inverter" android:inputType="number" android:layout_width="90dp"/>
+                <TextView android:text="Router:"/>
+                <EditText android:id="@+id/router" android:inputType="number" android:layout_width="90dp"/>
+            </TableRow>
+
+            <!-- Row 7 -->
+            <TableRow>
+                <TextView android:text="Computer:"/>
+                <EditText android:id="@+id/computer" android:inputType="number" android:layout_width="90dp"/>
+                <TextView android:text="Heater:"/>
+                <EditText android:id="@+id/heater" android:inputType="number" android:layout_width="90dp"/>
+            </TableRow>
+
+            <!-- Row 8 -->
+            <TableRow>
+                <TextView android:text="Washing Machine:"/>
+                <EditText android:id="@+id/washing_machine" android:inputType="number" android:layout_width="90dp"/>
+            </TableRow>
+
+        </TableLayout>
+
+        <!-- Insert Button -->
+        <Button
+            android:id="@+id/update_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UPDATE DATA"
+            android:background="@android:color/holo_purple"
+            android:textColor="@android:color/white"
+            android:padding="8dp"
+            android:textSize="14sp"
+            android:onClick="insertApplianceData"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Current meter reading"
+                android:textSize="14sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="6dp"/>
+
+            <EditText
+                android:id="@+id/meter_reading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Enter the number"
+                android:inputType="numberDecimal"/>
+        </LinearLayout>
+
+        <!-- Calculate Button -->
+        <Button
+            android:id="@+id/calculate_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CALCULATE"
+            android:background="@android:color/darker_gray"
+            android:textColor="@android:color/white"
+            android:padding="8dp"
+            android:textSize="14sp"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/hive_can_consume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Can Consume:"
+                android:textSize="14sp"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="6dp"/>
+
+            <EditText
+                android:id="@+id/consumption_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="none"
+                android:focusable="false"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <!-- Next Button (Ensuring it Stays Visible) -->
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NEXT"
+            android:background="@android:color/holo_blue_dark"
+            android:textColor="@android:color/white"
+            android:padding="8dp"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+
+    </LinearLayout>
+</ScrollView>

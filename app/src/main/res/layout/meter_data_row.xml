@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:orientation="horizontal"
+    android:background="#B3E5FC">
+
+    <TextView
+        android:id="@+id/tvMeterId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Meter ID"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvCurrentReading"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Current Reading"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvConsumptionEnergy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Calucated Energy"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvConsumptionAfterWeek"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Energy After a wee"
+        android:textSize="16sp" />
+
+</LinearLayout>

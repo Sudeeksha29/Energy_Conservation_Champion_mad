@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="#B3E5FC">
+
+    <!-- Can Consume Section (One below the other) -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Can consume:"
+        android:textSize="16sp"
+        android:layout_marginBottom="5dp"/>
+
+    <EditText
+        android:id="@+id/editTextCanConsume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_blue_dark"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- This Week Meter Reading Section (One below the other) -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This week meter reading:"
+        android:textSize="16sp"
+        android:layout_marginBottom="5dp"/>
+
+    <EditText
+        android:id="@+id/editTextWeekReading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter reading here"
+        android:inputType="numberDecimal"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Compare Button -->
+    <Button
+        android:id="@+id/btnCompare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COMPARE"
+        android:padding="10dp"
+        android:background="@android:drawable/btn_default"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Instruction Text -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please set an alarm if you are consuming more to keep it in check."
+        android:textSize="14sp"
+        android:gravity="center"
+        android:paddingBottom="10dp"/>
+
+    <!-- Set Alarm Button -->
+    <Button
+        android:id="@+id/btnSetAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SET ALARM"
+        android:padding="10dp"
+        android:background="@android:drawable/btn_default"/>
+
+</LinearLayout>
