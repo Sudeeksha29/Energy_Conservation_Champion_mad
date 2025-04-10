@@ -1,5 +1,9 @@
 # Energy Conservation Champion
 
+## Documentation  
+[📘 Click here to access the Energy Conservation Champion Documentation](https://drive.google.com/file/d/1FMqjqVhrMy5XR9sEqxUNmeQ6IP26JaBL/view?usp=sharing)
+
+## Description 
 **Energy Conservation Champion** is an Android-based mobile application developed to assist individuals, households, and businesses in monitoring, analyzing, and optimizing their energy consumption. The application provides an intuitive and structured interface for tracking electricity usage, estimating costs, and adopting energy-efficient practices through real-time data analysis and actionable insights.
 
 ## Features
